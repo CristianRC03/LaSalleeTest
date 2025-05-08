@@ -1,7 +1,6 @@
 describe('Debe abrir la Agenda de Eventos', () => {
   beforeEach(() => {
     cy.visitarLaSallePagina();
-    cy.wait(1000);
     cy.fixture('user').then((user) => {
       cy.iniciarSesion(user.matricula, user.contrasena);
     });
