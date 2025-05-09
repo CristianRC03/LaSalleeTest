@@ -1,13 +1,12 @@
 describe('Debe abrir el directorio', () => {
   beforeEach(() => {
-      cy.visitarLaSallePagina()
-      cy.wait(1000);
+      cy.visitarLaSallePagina();
       cy.fixture('user').then((user) => {
           cy.iniciarSesion(user.matricula, user.contrasena);
       })
   })
 
-  it('Ir al directorio', () => {
+  it('TC0025: Ir al directorio', () => {
       cy.wait(1000);
       var button_menu = cy.get('label[id="btnMenu"]');
       button_menu.click();
