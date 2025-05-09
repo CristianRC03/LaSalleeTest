@@ -2,7 +2,7 @@ describe('Navegar Oferta Academica', () => {
 beforeEach(() => {
     cy.visitarLaSallePagina();
 });
-it('Muestra el span de NUESTRAS licenciaturas', () => {
+it(' TC0014 Muestra el span de NUESTRAS licenciaturas', () => {
     cy.get('#link3 a').should('have.attr','href','oferta/').click();
     cy.url().should('include','oferta/');
     cy.get('a[href="licenciaturas.php"] .tile_title span')

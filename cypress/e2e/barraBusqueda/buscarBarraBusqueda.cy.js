@@ -3,7 +3,7 @@ describe('Búsqueda rápida en La Salle Bajío', () => {
         cy.visitarLaSallePagina();
     });
 
-    it('Escribe “somos”, envía la búsqueda y muestra el total de resultados en consola', () => {
+    it(' TC0005 Escribe “somos”, envía la búsqueda y muestra el total de resultados en consola', () => {
 
     cy.get('#search')
         .click()

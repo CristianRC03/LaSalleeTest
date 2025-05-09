@@ -2,7 +2,7 @@ describe('Nuestras maestrías', () => {
     beforeEach(() => {
         cy.visitarLaSallePagina();
     });
-    it('Clic en maestrías y muestra Administración de Negocios en Entornos Virtuales', () => {
+    it(' TC0018 Clic en maestrías y muestra Administración de Negocios en Entornos Virtuales', () => {
     cy.get('#link3 a').click();
     cy.get('a[href="maestrias.php"]').click();
     cy.url().should('include','maestrias.php');

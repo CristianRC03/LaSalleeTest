@@ -2,7 +2,7 @@ describe('Nuestros doctorados', () => {
     beforeEach(() => {
         cy.visitarLaSallePagina();
     });
-    it('Clic en doctorados y muestra Derecho', () => {
+    it(' TC0019 Clic en doctorados y muestra Derecho', () => {
     cy.get('#link3 a').click();
     cy.get('a[href="doctorados.php"]').click();
     cy.url().should('include','doctorados.php');

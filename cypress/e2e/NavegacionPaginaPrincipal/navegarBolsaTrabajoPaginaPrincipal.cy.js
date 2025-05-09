@@ -2,7 +2,7 @@ describe('08 – Navegar a BOLSA de trabajo', () => {
     beforeEach(() => {
         cy.visitarLaSallePagina();
     });
-    it('Hace clic en BOLSA de trabajo y muestra el texto del logo', () => {
+    it(' TC0011 Hace clic en BOLSA de trabajo y muestra el texto del logo', () => {
     cy.contains('ul li a', 'BOLSA')
         .should('have.attr', 'href', 'https://bolsa.lasallebajio.edu.mx/registro_estudiante')
         .then(() => {

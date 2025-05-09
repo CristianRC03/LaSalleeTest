@@ -2,7 +2,7 @@ describe('Certificaciones en asesor de imagen', () => {
     beforeEach(() => {
       cy.visitarLaSallePagina();
     });
-    it('Clic en diplomados y muestra la primera certificación', () => {
+    it(' TC0016 Clic en diplomados y muestra la primera certificación', () => {
       cy.get('#link3 a').click();
       cy.get('a[href="ec.php"]').click();
       cy.url().should('include','ec.php');

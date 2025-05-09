@@ -2,7 +2,7 @@ describe('Noticias: Buscar noticias', () => {
     beforeEach(() => {
         cy.visitarLaSallePagina();
     });
-    it('Hace clic en NOTICIAS y muestra texto buscar noticias', () => {
+    it(' TC0012 Hace clic en NOTICIAS y muestra texto buscar noticias', () => {
     cy.contains('#noticias a', 'NOTICIAS').click();
     cy.get('#frmNot span')
         .invoke('text')

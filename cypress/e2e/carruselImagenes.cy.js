@@ -3,7 +3,7 @@ beforeEach(() => {
     cy.visitarLaSallePagina();
 });
 
-it('Recorre el carrusel, hace click en “ADQUIERE TU FICHA AQUÍ”, y muestra el h2 en consola', () => {
+it(' TC0007 Recorre el carrusel, hace click en “ADQUIERE TU FICHA AQUÍ”, y muestra el h2 en consola', () => {
     const maxClicks = 10;
     let clicks = 0;
 
